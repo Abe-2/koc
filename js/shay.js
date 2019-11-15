@@ -32,7 +32,7 @@ var myDropzone;
 
 Dropzone.options.dropzoneSMF = {
     paramName: 'file',
-    url: "http://127.0.0.1:5000/new_csv", // TODO: change url
+    url: "http://127.0.0.1:5000/getColumns",
     method: 'post',
     withCredentials: false,
     // enqueueForUpload: true,
