@@ -63,6 +63,14 @@ Dropzone.options.dropzoneSMF = {
     }
 };
 
+function testAPI() {
+    var myURL = "http://127.0.0.1:5000/test_csv";
+    $.getJSON(myURL, function (data) {
+        console.log(data);
+        populateTable(data);
+    });
+}
+
 function populateTable(arr) {
     result = [];
 
@@ -229,11 +237,6 @@ function populateTable(arr) {
     //         }],
     //
     // });
-
-
-
-
-    // datatable.destroy();
 }
 
 $(document).ready(function () {
