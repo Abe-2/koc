@@ -80,8 +80,8 @@
 <!-- begin:: Header Mobile -->
 <div id="kt_header_mobile" class="kt-header-mobile ">
     <div class="kt-header-mobile__logo">
-        <a href="index.html">
-            <img alt="Logo" src="../img/logo.png">
+        <a href="../index.html">
+            <img alt="Logo" src="../img/logo.png" style="width: 30px;">
         </a>
     </div>
     <div class="kt-header-mobile__toolbar">
@@ -100,8 +100,8 @@
                         <div class="kt-header__brand kt-grid__item" id="kt_header_brand">
                             <div class="kt-header__brand-logo">
                                 <a href="../index.html">
-                                    <img alt="Logo" src="../img/logo.png" class="kt-header__brand-logo-default">
-                                    <img alt="Logo" src="../assets/media/logos/logo-4-sticky.png" class="kt-header__brand-logo-sticky">
+                                    <img alt="Logo" src="../img/logo.png" class="kt-header__brand-logo-default" style="width: 80px;">
+                                    <img alt="Logo" src="../img/logo.png" class="kt-header__brand-logo-sticky" style="width: 80px;">
                                 </a>
                             </div>
                         </div>
@@ -141,7 +141,39 @@
                     <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
 
                         <!-- begin:: Header -->
-                        <div class="kt-subheader kt-grid__item" id="kt_subheader"></div>
+                        <div class="kt-subheader kt-grid__item" id="kt_subheader">
+                            <div class="row w-100 mr-0">
+                                <div class="col">
+                                    <div class="alert alert-light alert-elevate fade show" role="alert">
+                                        <div class="alert-text">
+
+                                        <h4 class="kt-link kt-bold">What is this model doing?</h4><br><br>
+                                        KOC data was used to train a Random Forest Regression model based on 16 different features:<br /><br>
+                                        <p style="margin-left: 20px">
+                                        1.    Lever position (lp)<br />
+                                        2.    Ship speed (v) [knots]<br />
+                                        3.    Gas Turbine (GT) shaft torque (GTT) [kN m]<br />
+                                        4.    GT rate of revolutions (GTn) [rpm]<br />
+                                        5.    Gas Generator rate of revolutions (GGn) [rpm]<br />
+                                        6.    Starboard Propeller Torque (Ts) [kN]<br />
+                                        7.    Port Propeller Torque (Tp) [kN]<br />
+                                        8.    Hight Pressure (HP) Turbine exit temperature (T48) [C]<br />
+                                        9.    GT Compressor inlet air temperature (T1) [C]<br />
+                                        10.    GT Compressor outlet air temperature (T2) [C]<br />
+                                        11.    HP Turbine exit pressure (P48) [bar]<br />
+                                        12.    GT Compressor inlet air pressure (P1) [bar]<br />
+                                        13.    GT Compressor outlet air pressure (P2) [bar]<br />
+                                        14.    GT exhaust gas pressure (Pexh) [bar]<br />
+                                        15.    Turbine Injecton Control (TIC) [%]<br />
+                                        16.    Fuel flow (mf) [kg/s]<br /><br>
+                                        </p>
+                                        The goal is to predict the decay of GT compressor and turbine health. Of the 16 features used, the most and least significant are shown through the model projections found below.
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- end:: Header -->
 
                         <!-- begin:: Content -->
