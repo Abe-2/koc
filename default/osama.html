@@ -1,6 +1,6 @@
 <html lang="en" class="wf-poppins-n3-active wf-poppins-n4-active wf-poppins-n5-active wf-poppins-n6-active wf-poppins-n7-active wf-active"><!-- begin::Head --><head>
     <meta charset="utf-8">
-    <title>Keen | Dashboard</title>
+    <title>iLana | Dashboard</title>
     <meta name="description" content="Latest updates and statistic charts">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,13 +79,12 @@
 <!-- begin:: Header Mobile -->
 <div id="kt_header_mobile" class="kt-header-mobile ">
     <div class="kt-header-mobile__logo">
-        <a href="index.html">
-            <img alt="Logo" src="../assets/media/logos/logo-5.png">
+        <a href="../index.html">
+            <img alt="Logo" src="../img/logo.png" style="width: 40px;">
         </a>
     </div>
     <div class="kt-header-mobile__toolbar">
         <button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
-        <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more-1"></i></button>
     </div>
 </div>
 <!-- end:: Header Mobile -->
@@ -99,8 +98,8 @@
                         <!-- begin:: Brand -->
                         <div class="kt-header__brand kt-grid__item" id="kt_header_brand">
                             <div class="kt-header__brand-logo">
-                                <a href="index.html">
-                                    <img alt="Logo" src="../assets/media/logos/logo-4.png" class="kt-header__brand-logo-default">
+                                <a href="../index.html">
+                                    <img alt="Logo" src="../img/logo.png" class="kt-header__brand-logo-default" style="width: 80px;">
                                     <img alt="Logo" src="../assets/media/logos/logo-4-sticky.png" class="kt-header__brand-logo-sticky">
                                 </a>
                             </div>
@@ -121,7 +120,7 @@
                                     </li>
 
                                     <li class="kt-menu__item kt-menu__item--open kt-menu__item--here kt-menu__item--rel kt-menu__item--hover" aria-haspopup="true">
-                                        <a href="osama.html" class="kt-menu__link"><span class="kt-menu__link-text">Osama</span></a>
+                                        <a href="osama.html" class="kt-menu__link"><span class="kt-menu__link-text">Model</span></a>
                                     </li>
 
                                     <li class="kt-menu__item kt-menu__item--rel" aria-haspopup="true">
@@ -141,13 +140,31 @@
                     <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
 
                         <!-- begin:: Header -->
-                        <div class="kt-subheader kt-grid__item" id="kt_subheader"></div>
+                        <div class="kt-subheader kt-grid__item" id="kt_subheader">
+                            <h3>Compressor Health Coefficient Model Projection</h3>
+                        </div>
                         <!-- end:: Header -->
 
                         <!-- begin:: Content -->
                         <div class="kt-content kt-grid__item kt-grid__item--fluid" id="kt_content">
                             <!-- begin:: Row -->
-                            <div class="row" id="charts_area">
+                            <div class="row" id="comp_charts_area">
+
+                            </div>
+                            <!-- end:: Row -->
+                        </div>
+                        <!-- end:: Content -->
+
+                        <!-- begin:: Header -->
+                        <div class="kt-subheader kt-grid__item" id="kt_subheader_2">
+                            <h3>Turbine Health Coefficient Model Projection</h3>
+                        </div>
+                        <!-- end:: Header -->
+
+                        <!-- begin:: Content -->
+                        <div class="kt-content kt-grid__item kt-grid__item--fluid" id="kt_content_2">
+                            <!-- begin:: Row -->
+                            <div class="row" id="turbine_charts_area">
 
                             </div>
                             <!-- end:: Row -->
@@ -283,6 +300,7 @@
 
 <!--begin:: custom js -->
 <script type="text/javascript" src="../js/osama.js"></script>
+<script type="text/javascript" src="../js/data.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <!--end:: custom js -->
 

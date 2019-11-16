@@ -6,7 +6,7 @@ var datatable;
 
 Dropzone.options.dropzoneSMF = {
     paramName: 'file',
-    url: "http://127.0.0.1:5000/new_csv",
+    url: "https://ilanaapi-kelkawiali749341.codeanyapp.com/new_csv",
     method: 'post',
     withCredentials: false,
     // enqueueForUpload: true,
@@ -64,7 +64,7 @@ Dropzone.options.dropzoneSMF = {
 };
 
 function testAPI() {
-    var myURL = "http://127.0.0.1:5000/test_csv";
+    var myURL = "https://ilanaapi-kelkawiali749341.codeanyapp.com/test_csv";
     $.getJSON(myURL, function (data) {
         console.log(data);
         populateTable(data);
