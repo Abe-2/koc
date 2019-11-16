@@ -10,7 +10,7 @@ var myDropzone;
 
 Dropzone.options.dropzoneSMF = {
     paramName: 'file',
-    url: "http://localhost:5000/getColumns",
+    url: "https://ilanaapi-kelkawiali749341.codeanyapp.com/getColumns",
     method: 'post',
     withCredentials: false,
     // enqueueForUpload: true,
@@ -146,7 +146,7 @@ function analyze() {
     formData.append('cyts', JSON.stringify(sentCyts));
 
     $.ajax({
-        url: 'http://localhost:5000/getResults',
+        url: 'https://ilanaapi-kelkawiali749341.codeanyapp.com/getResults',
         type: 'post',
         data: formData,
         contentType: false,
@@ -179,10 +179,10 @@ function drawPlot(data) {
 
     let traces = [];
 
-    let categories = [];
-    Object.keys(plot.data).forEach(function(key) {
-        categories.push(key);
-    });
+    // let categories = [];
+    // Object.keys(plot.data).forEach(function(key) {
+    //     categories.push(key);
+    // });
 
     // we always have three traces: data, model, predict. Data and model are scatter while predict is the model
 
@@ -191,7 +191,7 @@ function drawPlot(data) {
         let dataTrace = {
             type: 'bar',
             name: key,
-            x: categories,
+            x: plot.categories,
             y: plot.data[key]
         };
 

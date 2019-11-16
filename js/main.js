@@ -6,7 +6,7 @@ var datatable;
 
 Dropzone.options.dropzoneSMF = {
     paramName: 'file',
-    url: "https://ilanaapi-kelkawiali749341.codeanyapp.com//new_csv",
+    url: "https://ilanaapi-kelkawiali749341.codeanyapp.com/new_csv",
     method: 'post',
     withCredentials: false,
     // enqueueForUpload: true,
