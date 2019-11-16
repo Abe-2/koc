@@ -74,7 +74,7 @@ function testAPI() {
 function populateTable(arr) {
     result = [];
 
-    var headers = ['lp', 'v', 'GT', 'GTn', 'GGn', 'Ts', 'Tp', 'HP', 'T1', 'T2', 'P48', 'P1', 'P2', 'Pexh', 'TIC', 'mf', 'CompHealth'];
+    var headers = ['lp', 'v', 'GT', 'GTn', 'GGn', 'Ts', 'Tp', 'HP', 'T1', 'T2', 'P48', 'P1', 'P2', 'Pexh', 'TIC', 'mf', 'Compressor Health'];
 
     for (var i = 0; i < arr.length; i++) {
         var row = {};
@@ -275,7 +275,7 @@ $(document).ready(function () {
             {data: 'Pexh', title: "Pexh"},
             {data: 'TIC', title: "TIC"},
             {data: 'mf', title: "mf"},
-            {data: 'CompHealth', title: "CompHealth"}
+            {data: 'Compressor Health', title: "Compressor Health"}
         ],
 
     });
