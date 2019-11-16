@@ -48,8 +48,8 @@ function drawPlot(data) {
 
     let buffer = $("<div>").addClass(sizeClasses + " order-lg-2 order-xl-1");
 
-    let plotContainer = $("<div>").addClass("kt-portlet kt-portlet--height-fluid-half");
-    plotContainer.css("height", 500 + plot.text_height);
+    let plotContainer = $("<div>").addClass("p-2 shadow-sm rounded-lg bg-white mb-5");
+    // plotContainer.css("height", 500 + plot.text_height);
     buffer.append(plotContainer);
 
     let plotElement = $("<div>").attr("id", String(plotId)).addClass("");
