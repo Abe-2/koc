@@ -55,7 +55,6 @@
     <link href="../assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css">
     <link href="../assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css">
     <link href="../assets/vendors/custom/vendors/fontawesome5/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets/vendors/general/dropzone/dist/basic.css" rel="stylesheet" type="text/css">
     <!--end:: Global Optional Vendors -->
 
     <!--begin:: custom css -->
@@ -81,7 +80,7 @@
 <div id="kt_header_mobile" class="kt-header-mobile ">
     <div class="kt-header-mobile__logo">
         <a href="index.html">
-            <img alt="Logo" src="../assets/media/logos/logo-5.png">
+            <img alt="Logo" src="../img/logo.png">
         </a>
     </div>
     <div class="kt-header-mobile__toolbar">
@@ -100,8 +99,8 @@
                         <!-- begin:: Brand -->
                         <div class="kt-header__brand kt-grid__item" id="kt_header_brand">
                             <div class="kt-header__brand-logo">
-                                <a href="../index.html">
-                                    <img alt="Logo" src="../assets/media/logos/logo-4.png" class="kt-header__brand-logo-default">
+                                <a href="index.html">
+                                    <img alt="Logo" src="../img/logo.png" class="kt-header__brand-logo-default">
                                     <img alt="Logo" src="../assets/media/logos/logo-4-sticky.png" class="kt-header__brand-logo-sticky">
                                 </a>
                             </div>
@@ -116,7 +115,19 @@
                         <button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
                         <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
                             <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile ">
+                                <ul class="kt-menu__nav ">
+                                    <li class="kt-menu__item kt-menu__item--rel" aria-haspopup="true">
+                                        <a href="index2.html" class="kt-menu__link"><span class="kt-menu__link-text">Main</span></a>
+                                    </li>
 
+                                    <li class="kt-menu__item kt-menu__item--open kt-menu__item--here kt-menu__item--rel kt-menu__item--hover" aria-haspopup="true">
+                                        <a href="osama.html" class="kt-menu__link"><span class="kt-menu__link-text">Osama</span></a>
+                                    </li>
+
+                                    <li class="kt-menu__item kt-menu__item--rel" aria-haspopup="true">
+                                        <a href="code.html" class="kt-menu__link"><span class="kt-menu__link-text">Source Code</span></a>
+                                    </li>
+                                </ul>
                             </div>
 
                         </div>
@@ -135,41 +146,6 @@
 
                         <!-- begin:: Content -->
                         <div class="kt-content kt-grid__item kt-grid__item--fluid" id="kt_content">
-                            <div class="kt-portlet kt-portlet--mobile">
-                                <div class="kt-portlet__body">
-                                    <div class="kt-subheader__toolbar">
-                                        <form class="dropzone dz-clickable mb-3" id="dropzoneSMF">
-                                            <div class="fallback">
-                                                <input id="file" name="file" type="file">
-                                            </div>
-                                        </form>
-
-                                        <div class="kt-subheader__wrapper">
-                                            <button id="btn_upload" class="btn btn-sm btn-elevate btn-brand btn-elevate">Start uploading</button>
-<!--                                            <button id="btn_sample" class="btn btn-sm btn-label btn-label-brand btn-bold" onclick="testAPI()">Use sample data</button>-->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- begin:: columns selection -->
-                                <div class="kt-portlet__body" id="selection_phase" style="display: none;">
-                                    <div class="align-self-center">
-                                        <p id="selection_title">select columns to include in the analysis</p>
-
-                                        <div id="cyt_selection" class="btn-group-toggle">
-                                        </div>
-
-                                        <button id="submit_btn" class="btn btn-primary mt-5 shadow btn-lg" style="" onclick="analyze()">Submit</button>
-                                    </div>
-                                </div>
-                                <!-- end:: columns selection -->
-
-                            </div>
-                        </div>
-                        <!-- end:: Content -->
-
-                        <!-- begin:: Content -->
-                        <div class="kt-content kt-grid__item kt-grid__item--fluid" id="kt_content_2">
                             <!-- begin:: Row -->
                             <div class="row" id="charts_area">
 
@@ -188,7 +164,63 @@
 <!-- begin:: Scrolltop -->
 <div id="kt_scrolltop" class="kt-scrolltop"> <i class="la la-arrow-up"></i> </div>
 <!-- end:: Scrolltop -->
+<!-- begin::Global Config(global config for global JS sciprts) -->
+<script>
+    var KTAppOptions = {
 
+        "colors": {
+
+            "state": {
+
+                "brand": "#385aeb",
+
+                "metal": "#c4c5d6",
+
+                "light": "#ffffff",
+
+                "accent": "#00c5dc",
+
+                "primary": "#5867dd",
+
+                "success": "#34bfa3",
+
+                "info": "#36a3f7",
+
+                "warning": "#ffb822",
+
+                "danger": "#fd3995",
+
+                "focus": "#9816f4"
+            },
+
+            "base": {
+
+                "label": [
+
+                    "#c5cbe3",
+
+                    "#a1a8c3",
+
+                    "#3d4465",
+
+                    "#3e4466"
+                ],
+
+                "shape": [
+
+                    "#f0f3ff",
+
+                    "#d9dffa",
+
+                    "#afb4d4",
+
+                    "#646c9a"
+                ]
+            }
+        }
+    };
+</script>
+<!-- end::Global Config -->
 <!--begin:: Global Mandatory Vendors -->
 <script src="../assets/vendors/general/jquery/dist/jquery.js" type="text/javascript"></script>
 <script src="../assets/vendors/general/popper.js/dist/umd/popper.js" type="text/javascript"></script>
@@ -250,7 +282,7 @@
 <!--end:: Global Optional Vendors -->
 
 <!--begin:: custom js -->
-<script type="text/javascript" src="../js/shay.js"></script>
+<script type="text/javascript" src="../js/shay-analysis.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <!--end:: custom js -->
 
